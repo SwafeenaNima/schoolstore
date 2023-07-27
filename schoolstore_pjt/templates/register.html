@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Registration | School Store{% endblock %}
+
+{% block content %}
+
+<div class="my_img_banner" style="margin-left:-15px;">
+    <img class="my_image my_image_padding" src="{% static 'images/reg_ba.png' %}" alt="School Store">
+    <div class="content" style="margin-left: 31%; margin-top: 2%;">
+        <div class="container mt-5">
+           <h2>Register Here</h2>
+        <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username<span style="color:red;">*</span>:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password<span style="color:red;">*</span>:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm_password">Confirm Password<span style="color:red;">*</span>:</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+         {% if error_message %}
+            <p class="error-message" style="color: #890c0c;font-size: 16px; padding:6px;">{{ error_message }}</p>
+         {% endif %}
+        </div>
+    <div class="registration-footer">
+          Already have an account? <a href="{% url 'login' %}">Login here</a>
+    </div>
+
+    </div>
+    </div>
+</div>
+
+{% endblock %}

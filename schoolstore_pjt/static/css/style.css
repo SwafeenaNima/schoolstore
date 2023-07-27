@@ -1,0 +1,170 @@
+/* Custom CSS for Navbar */
+.navbar {
+      width: 80%;
+      margin: auto;
+      height: 110px;
+      background-color: white; /* Set the background color to white */
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border-bottom: 2px solid #114a54;
+    }
+
+.navbar-brand {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+    }
+.navbar-brand a:hover{
+    text-decoration:none;
+}
+.navbar-nav {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+.navbar-nav .nav-item .nav-link {
+      padding: 0 15px;
+      color: #1B4959;
+    }
+
+.navbar-nav .nav-item .nav-link:hover {
+      color: #114a54;
+    }
+
+.dropdown-menu {
+      background-color: #1B4959; /* Background color for the dropdown menu */
+      border: none; /* Remove the default border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+
+.dropdown-item.department-item {
+      padding-left: 35px; /* Add indentation to the dropdown items */
+      color: #fff; /* Font color for the dropdown items */
+    }
+
+.dropdown-item.department-item:hover {
+      background-color: #33A1C9; /* Change background color on hover */
+      color: #fff; /* Font color on hover */
+    }
+
+/* Font styles */
+body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #1B4959;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+.content-container {
+      max-width: 80%;
+      margin-top: 140px;
+      height:600px;
+      /*background:#a2dfeb;*/
+    }
+
+/* Style for the navbar title */
+.navbar-title {
+      font-size: 45px;
+      font-weight: bold;
+      color: #114a54;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin-left: 10px;
+    }
+
+/* Style for the logo */
+.navbar-logo {
+      width: 100px;
+      height: 100px;
+      border: 3px solid #114a54;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+    }
+
+/* Override default Bootstrap styles for active and focus states */
+.navbar-nav .nav-item .nav-link.active,
+    .navbar-nav .nav-item .nav-link:focus {
+      color: #1B4959;
+    }
+
+.my_img_banner{
+        position: relative;
+        display: inline-block;
+    }
+.content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    border-radius: 5px;
+    width:500px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+#overlay-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font family to Segoe UI or any preferred sans-serif font */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#overlay-button:hover {
+    background-color: #c62828; /* Change background color on hover */
+    transform: scale(1.1); /* Apply a slight scale effect on hover */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+.content p {
+    margin: 0;
+    color:#dee9ec
+}
+.content h1{
+    color:#fff;
+}
+
+.nw_pg_butt{
+    margin-left:0%;
+    width:200px;
+    height:70px;
+    font-size: 32px;
+
+    display: block;
+    margin-top: 90%;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font family to Segoe UI or any preferred sans-serif font */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+}
+.nw_pg_butt:hover {
+    background-color: #c62828; /* Change background color on hover */
+    transform: scale(1.1); /* Apply a slight scale effect on hover */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+
+

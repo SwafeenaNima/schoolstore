@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login | School Store{% endblock %}
+
+{% block content %}
+
+<div class="my_img_banner" style="margin-left:-15px;">
+    <img class="my_image my_image_padding" src="{% static 'images/lg_bn.png' %}" alt="School Store">
+    <div class="content" style="margin-left: 31%;">
+        <div class="container mt-5">
+
+            <h2 class="mb-4">Login Here</h2>
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="username">Username:<span style="color:red;">*</span></label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:<span style="color:red;">*</span></label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            {% if error_message %}
+                <p class="error-message" style="color: #890c0c;font-size: 16px; padding:6px;">{{ error_message }}</p>
+            {% endif %}
+            <p class="mt-3">Don't have an account? <a href="{% url 'register' %}">Register here</a>.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+{{ product.name }} - School Store
+
+{% endblock %}
+
+{% block content %}
+<div class="my_img_banner" style="margin-left:-15px;">
+    <img class="my_image my_image_padding" src="{% static 'images/nw.png' %}" alt="School Store">
+     <div class="content">
+         <a href="{% url 'login' %}" style="text-decoration:none;"><button id="overlay-button">Click Here</button></a>
+     </div>
+</div>
+
+
+<div class="container mt-5">
+    <h2>New Page</h2>
+    <button id="showFormBtn" class="btn btn-primary mt-3">Show Form</button>
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+    """if request.method == 'POST':
+        # Process the login form data here (validate user credentials, etc.)
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        # For simplicity, you can implement your authentication logic here
+        # Replace this with your actual authentication logic using Django's authentication framework or custom logic
+
+        # For demonstration purposes, we'll just print the username and password
+        print("Username:", username)
+        print("Password:", password)
+
+        # Redirect to the new page after successful login (replace 'new_page' with your actual URL name)
+        return redirect('new_page')
+
+    return render(request, 'login.html')"""

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}School Store{% endblock %}
+
+{% block content %}
+<div class="my_img_banner" style="margin-left:-15px;">
+    <img class="my_image my_image_padding" src="{% static 'images/banner.png' %}" alt="School Store">
+     <div class="content">
+            <h1>Kids Learning Center</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod nisi vel augue vulputate tristique.</p>
+         <a href="{% url 'login' %}" style="text-decoration:none;"><button id="overlay-button">LOGIN</button></a>
+     </div>
+</div>
+{% endblock %}
